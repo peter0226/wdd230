@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|PT+Sans+Narrow:400,700');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #002d5f;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > img {
+    width: 70px;
+    margin: 10px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+nav{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #333;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #068dee; /* Establece el color de los enlaces según tu preferencia */
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #004e9a;
+}
+
+.flag{
+    width: 20px;
+    height: 15px;
+}
