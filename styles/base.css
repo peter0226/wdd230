@@ -106,13 +106,9 @@ footer p {
 }
 
 a {
-    color: #0078d4;
+    /*color: #0078d4;*/
     text-decoration: none;
     transition: color 0.3s;
-}
-
-a:hover {
-    color: #004e9a;
 }
 
 .flag{
