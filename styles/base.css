@@ -44,10 +44,12 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center; 
+    margin-top: 1px;
+    margin-bottom: 1px
 }
 
 nav li {
-    display: inline-block; 
+    /*display: inline-block;*/
     margin: 0 10px; 
 }
 
@@ -58,7 +60,7 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    color: #068dee; /* Establece el color de los enlaces según tu preferencia */
+    color: #068dee;
 }
 
 
@@ -77,6 +79,9 @@ main {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+.title{
+    grid-column: 1 / -1; 
 }
 
 h2 {

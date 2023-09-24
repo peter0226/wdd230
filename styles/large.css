@@ -1,0 +1,9 @@
+@media (min-width: 640px) {
+    nav li {
+        display: inline-block; 
+        margin: 0 10px; 
+    }
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+}

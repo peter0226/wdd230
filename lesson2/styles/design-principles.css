@@ -1,0 +1,27 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.title{
+    grid-column: 1 / -1; 
+}
+
+.card > img{
+    width:100%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Responsive layout for small screens */
+@media screen and (max-width: 480px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
