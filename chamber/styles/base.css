@@ -178,10 +178,6 @@ footer p {
     margin: 0;
 }
 
-footer div:first-child {
-    align-items: left;
-}
-
 footer div:nth-child(2) {
     align-self: center;
 }
