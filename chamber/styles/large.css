@@ -1,0 +1,30 @@
+@media (min-width: 640px) {
+    nav li {
+        display: inline-block; 
+        margin: 0 10px; 
+    }
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #menu {
+		display: none;
+	}
+
+    header {
+        justify-content: center;
+    }
+
+    .btn-custom {
+        font-size: 30px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
