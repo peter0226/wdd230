@@ -10,4 +10,28 @@
     #menu {
 		display: none;
 	}
+
+    .herolabel {
+        top: 30px;
+        left: 30px;
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        /* Buenas */
+        width: initial;
+    }
+    
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family:"Great Vibes", serif;
+    }
+
+    header h1 {
+        font-size: 2em;
+        line-height: initial;
+        width: initial;
+    }
 }
