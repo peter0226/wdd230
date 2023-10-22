@@ -21,14 +21,14 @@
 </head>
 <body>
     <header>
-        <img width="70" height="70" src="images/logo.png" alt="Logo">
+        <img width="70" height="70" src="images/logo.webp" alt="Logo">
         <div>
             <h1>Cancun</h1>
             <h6 class="title2">Chamber of Commerce</h6>
         </div>
     </header>
     <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode" aria-describedby="changeModeDescription">
         <span class="slider round"></span>
     </label>
     <nav class="navigation">
@@ -41,7 +41,14 @@
         </ul>
     </nav>
     <div class="imagen-con-efecto">
-        <img src="images/hero_image.jpeg" alt="Mi Imagen">
+        <!--<img src="images/hero_image.jpeg" alt="Mi Imagen">-->
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
         <div class="capa-oscura">
         </div>
         <p class="card-text"><a href="#" class="btn btn-custom">Join the Chamber</a></p>
@@ -63,8 +70,11 @@
             <h2>Weather</h2>
             <hr>
             <h3>Information</h3>
-            <p>Weather:</p>
-            <p>Number of Visits:</p>
+            <p>Weather: <span id="weather">...</span></p>
+            <p>Number of Visits: <span id="visits">0</span></p>
+            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
+            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
+            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
         </section>
     </main>
 
@@ -98,7 +108,7 @@
 
     <footer>
         <div>
-            <img width="70" height="70" src="images/logo.png" alt="Logo">
+            <img width="70" height="70" src="images/logo.webp" alt="Logo">
             <div>
                 <h1>Cancun</h1>
                 <h6 class="title2">Chamber of Commerce</h6>
@@ -123,5 +133,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
