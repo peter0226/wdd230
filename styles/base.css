@@ -189,3 +189,14 @@ a {
 .open li a {
 	display: block;
 }
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
