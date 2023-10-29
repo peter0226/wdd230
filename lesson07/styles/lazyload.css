@@ -1,0 +1,24 @@
+hl {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 140px;
+    display: flex ;
+    flex-direction: column;
+}
+
+picture > img{
+    width: 100%;
+    background: #000;
+    animation: fade 15s ;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {opacity: 1;
+    }
+}
