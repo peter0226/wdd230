@@ -56,7 +56,7 @@ header h1 {
     width: 100%;
     height: calc(100% - 30px);
     background-color: rgba(0, 0, 0, 0.4);
-    pointer-events: none;
+    /*pointer-events: none;*/
   }
   
   .btn-custom {
@@ -268,4 +268,7 @@ a {
   .slider.round:before {
     border-radius: 50%;
   }
-  
+
+  .pictures > picture > img{
+    width: 100%;
+  }
