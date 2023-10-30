@@ -35,7 +35,7 @@
     <nav class="navigation">
         <button id="menu" aria-label="Menu"></button>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
@@ -45,54 +45,70 @@
     <main class="column2">
         <div>
         <section class="card">
-            <h2 class="title">Events</h2>
+            <h2 class="title">Demographic Data</h2>
             <hr>
-            <h3>Ribbon Cutting - The Diamand Shack</h3>
-            <p>Join us for the opening of The Diamond Shack Thursday at 1:00 p.m.</p>
-            <a href="#">more info ..</a>
+            <p><b>Cancun's Population:</b> Over 900,000 residents</p>
+            <p><b>Metropolitan Area:</b> Encompassing an area of 1,978 square kilometers</p>
+            <p><b>Cultural Diversity:</b> A cosmopolitan city with inhabitants from all over the world</p>
         </section>
         <br>
         <section class="card">
-            <h2>Weather</h2>
+            <h2 class="title">Statistical Information</h2>
             <hr>
-            <h3>Information</h3>
-            <p>Weather: <span id="weather">...</span></p>
-            <p>Number of Visits: <span id="visits">0</span></p>
-            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
-            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
-            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
+            <p><b>Registered Businesses:</b> Over 7,000</p>
+            <p><b>Economic Sectors:</b> Tourism, services, commerce, technology, and more</p>
+            <p><b>Annual Growth:</b> Cancun experiences steady growth</p>
         </section>
         <br>
         <section class="card">
-            <h2>Weather</h2>
+            <h2 class="title">Highlighted Events</h2>
             <hr>
-            <h3>Information</h3>
-            <p>Weather: <span id="weather">...</span></p>
-            <p>Number of Visits: <span id="visits">0</span></p>
-            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
-            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
-            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
+            <p><b>International Tourism Fair:</b> November - Promoting local and international tourism</p>
+            <p><b>Cancun Trade Expo:</b> March - Showcasing the latest trends in commerce</p>
+            <p><b>Business Conferences:</b> Monthly - Learning and networking opportunities</p>
         </section>
+        <br>
+        <section class="card">
+            <h2 class="title">Attractions</h2>
+            <hr>
+            <p><b>White Sand Beaches:</b> Explore our famous Caribbean beaches</p>
+            <p><b>Hotel Zone:</b> Restaurants, bars, and nightlife</p>
+            <p><b>Theme Parks:</b> Xcaret, Xel-Há, Xplor, and more</p>
+            <p><b>Archaeological Sites:</b> Tulum, Cobá, and Chichén Itzá</p>
+        </section>
+        <br>
+        <section class="card">
+            <h2 class="title">Latest visit date</h2>
+            <hr>
+            <div id="messageContainer"></div>
+        </section>
+        
     </div>
     <div>
 
         <picture>
-            <img src="images/picture1.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture1_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture1.webp" alt="Diving in Cancun" loading="lazy" width="100%">
         </picture>
         <picture>
-            <img src="images/picture2.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture2_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture2.webp" alt="Beachfront hotels" loading="lazy" width="100%">
         </picture>
         <picture>
-            <img src="images/picture3.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture3_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture3.webp" alt="Cancun beaches" loading="lazy" width="100%">
         </picture>
         <picture>
-            <img src="images/picture4.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture4_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture4.webp" alt="Ocean in Cancun" loading="lazy" width="100%">
         </picture>
         <picture>
-            <img src="images/picture5.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture5_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture5.webp" alt="Palm trees in Cancun" loading="lazy" width="100%">
         </picture>
         <picture>
-            <img src="images/picture6.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+            <source srcset="images/picture6_small.webp" media="(max-width: 500px)">
+            <img class="hover" src="images/picture6.webp" alt="Cenotes in Cancun" loading="lazy" width="100%">
         </picture>
 
 
@@ -127,6 +143,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visitDate.js"></script>
 </body>
 </html>
