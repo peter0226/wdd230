@@ -200,3 +200,7 @@ a {
 	font-weight: bolder;
 	font-size: larger;
 }
+
+iframe{
+    border:0;
+}
