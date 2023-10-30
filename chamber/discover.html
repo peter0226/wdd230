@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cancun Chamber of Commerce: Your trusted source for business information, networking, and resources in Cancun. We promote the growth and success of local and international businesses in our community. Join us to boost your business!">
+    <meta name="author" content="Pedro Pastor">
+    <title>Cancun - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Cancun - Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peter0226.github.io/wdd230/chamber/" />
+    <meta property="og:image" content="https://peter0226.github.io/wdd230/images/cdmx.jpg" />
+    <link rel="canonical" href="https://peter0226.github.io/wdd230/chamber/" />
+
+</head>
+<body>
+    <header>
+        <img width="70" height="70" src="images/logo.webp" alt="Logo">
+        <div>
+            <h1>Cancun</h1>
+            <h6 class="title2">Chamber of Commerce</h6>
+        </div>
+    </header>
+    <label class="switch">
+        <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode">
+        <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+        <button id="menu" aria-label="Menu"></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="column2">
+        <div>
+        <section class="card">
+            <h2 class="title">Events</h2>
+            <hr>
+            <h3>Ribbon Cutting - The Diamand Shack</h3>
+            <p>Join us for the opening of The Diamond Shack Thursday at 1:00 p.m.</p>
+            <a href="#">more info ..</a>
+        </section>
+        <br>
+        <section class="card">
+            <h2>Weather</h2>
+            <hr>
+            <h3>Information</h3>
+            <p>Weather: <span id="weather">...</span></p>
+            <p>Number of Visits: <span id="visits">0</span></p>
+            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
+            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
+            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
+        </section>
+        <br>
+        <section class="card">
+            <h2>Weather</h2>
+            <hr>
+            <h3>Information</h3>
+            <p>Weather: <span id="weather">...</span></p>
+            <p>Number of Visits: <span id="visits">0</span></p>
+            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
+            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
+            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
+        </section>
+    </div>
+    <div>
+
+        <picture>
+            <img src="images/picture1.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+        <picture>
+            <img src="images/picture2.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+        <picture>
+            <img src="images/picture3.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+        <picture>
+            <img src="images/picture4.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+        <picture>
+            <img src="images/picture5.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+        <picture>
+            <img src="images/picture6.webp" alt="Placeholder Kitten Image" loading="lazy" width="100%">
+        </picture>
+
+
+    </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <img width="70" height="70" src="images/logo.webp" alt="Logo">
+            <div>
+                <h1>Cancun</h1>
+                <h6 class="title2">Chamber of Commerce</h6>
+            </div>
+        </div>
+        <div>
+            <a id="correo4" href="mailto:correo1@example.com">correo1@example.com</a>
+            <br>
+            <a id="telefono4" href="tel:+123456789">+123456789</a>
+            
+        </div>
+        <div class="footer-end">
+            <hr>
+            <p>&copy; <span id="currentYear">2023</span> Pedro Pastor Alarcon, Mexico <img class="flag" src="https://flagcdn.com/20x15/mx.png" alt="Mexico"></p>
+            <p id="lastModified"></p>
+        </div>
+
+
+        
+        
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
