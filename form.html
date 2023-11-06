@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to WDD 230 - Web Frontend Development, the course assignment portal. Explore web frontend development with Pedro Pastor and access all your course assignments in one place.">
+    <meta name="author" content="Pedro Pastor">
+    <title>Pedro Pastor - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Pedro Pastor - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peter0226.github.io/wdd230/" />
+    <meta property="og:image" content="https://peter0226.github.io/wdd230/images/cdmx.jpg" />
+    <link rel="canonical" href="https://peter0226.github.io/wdd230/" />
+
+</head>
+<body>
+    <header>
+        <img width="70" height="70" src="images/foto.webp" alt="Pedro Pastor">
+        <h1>Pedro Pastor Alarcon</h1>
+    </header>
+    <nav class="navigation">
+        <button id="menu" aria-label="Menu"></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <h2 class="title">Form Build</h2>
+        <section class="card">
+            <form method="get" action="thanks.html">
+                <fieldset> 
+                    <legend>Create Account</legend> 
+                    <label class="top">Username* <input type="text" id="username" name="username" required></label> 
+                    <label class="top">Password* <input type="password" id="password" name="password"
+                        pattern="[A-Za-z0-9]{8,}"
+                        title="Password must be at least eight characters long and contain only alphanumeric characters" required></label> 
+                    <label class="top">Re-enter Your Password* <span id="formmessage"></span><input type="password" id="password2" name="password2"></label> 
+                    <label class="top">Email*
+                        <input type="email" id="email" name="email" pattern=".+@byui\.edu"
+                                title="Please enter a valid email address"  required>
+                    </label>
+
+                    <label class="lb">Page Rating <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                        <datalist id="rangevalues">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </datalist>
+                    </label>
+                </fieldset> 
+                <input class="submitBtn" type="submit" value="Sign Up">
+            </form>
+
+        </section>
+        
+    </main>
+    <br>
+
+    <footer>
+        <p>&copy; <span id="currentYear">2023</span> Pedro Pastor Alarcon, Mexico <img class="flag" src="https://flagcdn.com/20x15/mx.png" alt="Mexico"></p>
+        
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
