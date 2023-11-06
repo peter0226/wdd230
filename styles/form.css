@@ -4,16 +4,22 @@ main{
     margin: auto;
 }
 
+:root {
+    --red: #9c2c13;
+    --blue: #445ba9;
+    --gray: #555;
+}
+
 /*----------- FORM --------------*/
 
 form fieldset{
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--blue);
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: #445ba9;
+    color: var(--blue);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -21,7 +27,7 @@ form legend {
 form label.top, form div, .lb{
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--red);
     font-size: .8rem;
 }
 
@@ -32,7 +38,7 @@ form label.top input, form label.top select{
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: var(--gray);
     width: 100%;
     max-width: 14rem;
     background-color: rgba(0,0,0,0.1);
@@ -41,12 +47,12 @@ form label.top input, form label.top select{
 form label.sbs{
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: var(--gray);
 }
 
 form input.submitBtn{
     border: none;
-    background-color: #9c2c13;
+    background-color: var(--red);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
