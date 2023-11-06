@@ -2,5 +2,8 @@
     .column2{
         grid-template-columns: 1fr 2fr;
     }
+    .join .card fieldset {
+        width: 300px;
+    }
   }
   

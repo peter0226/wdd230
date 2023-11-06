@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your form has been successfully submitted.">
+    <meta name="author" content="Pedro Pastor">
+    <title>Info successfully submitted</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Cancun - Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peter0226.github.io/wdd230/chamber/" />
+    <meta property="og:image" content="https://peter0226.github.io/wdd230/images/cdmx.jpg" />
+    <link rel="canonical" href="https://peter0226.github.io/wdd230/chamber/" />
+
+</head>
+<body>
+    <header>
+        <img width="70" height="70" src="images/logo.webp" alt="Logo">
+        <div>
+            <h1>Cancun</h1>
+            <h6 class="title2">Chamber of Commerce</h6>
+        </div>
+    </header>
+    <label class="switch">
+        <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode">
+        <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+        <button id="menu" aria-label="Menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    
+
+    <main class="thankyou">
+        
+        <section class="card">
+            <h1>Thank You for Your Submission</h1>
+            <p>Your form has been successfully submitted. We have received your information and will be in touch with you shortly.</p>
+            <p>If you have any questions, please feel free to <a href="#">contact us</a>.</p>
+            <p>Would you like to explore more? Return to our <a href="index.html">home page</a>.</p>
+            </body>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <img width="70" height="70" src="images/logo.webp" alt="Logo">
+            <div>
+                <h1>Cancun</h1>
+                <h6 class="title2">Chamber of Commerce</h6>
+            </div>
+        </div>
+        <div>
+            <a id="correo4" href="mailto:correo1@example.com">correo1@example.com</a>
+            <br>
+            <a id="telefono4" href="tel:+123456789">+123456789</a>
+            
+        </div>
+        <div class="footer-end">
+            <hr>
+            <p>&copy; <span id="currentYear">2023</span> Pedro Pastor Alarcon, Mexico <img class="flag" src="https://flagcdn.com/20x15/mx.png" alt="Mexico"></p>
+            <p id="lastModified"></p>
+        </div>
+
+
+        
+        
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>

@@ -7,6 +7,10 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    .join{
+        grid-template-columns: 2fr 1fr;
+    }
+
     .column2{
         grid-template-columns: 1fr 3fr;
     }
@@ -40,4 +44,8 @@
     }
 
     .hover:hover {box-shadow: 0 0 50px #333;}
+
+    .join .card fieldset {
+        width: 300px;
+    }
 }

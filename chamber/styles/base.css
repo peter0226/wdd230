@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|PT+Sans+Narrow:400,700');
 
+:root {
+  --label: #200772;
+  --blue: #445ba9;
+  --gray: #555;
+  --inputs: rgba(0,0,0,0.1);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -272,3 +279,155 @@ a {
   .pictures > picture > img{
     width: 100%;
   }
+
+
+/*----------- FORM --------------*/
+
+form{
+  text-align: center;
+}
+
+form fieldset{
+  text-align: initial;
+  margin: 2rem 0;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+form legend {
+  color: var(--blue);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div, .lb{
+  display: block;
+  padding-top: 1rem;
+  color: var(--label);
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: var(--gray);
+  width: 85%;
+  /*max-width: 14rem;*/
+  background-color: var(--inputs);
+}
+
+form label.top textarea{
+  width: 95%;
+  background-color: var(--inputs);
+}
+
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color: var(--gray);
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: var(--label);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 85%;
+  /*max-width: 20rem;*/
+}
+
+form label.top input:required{
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+form label.lb{
+  /*max-width: 16rem;*/
+}
+
+form label input#r{
+  display: block;
+  width: 85%;
+}
+
+#r {
+margin-bottom: 0;
+}
+
+#rangevalue {
+font-size: 2rem;
+color: navy;
+}
+
+#rangevalues {
+display: flex;
+  margin-right: -2rem;
+
+}
+
+#rangevalues option {
+flex: 1 1 auto;
+}
+
+.thankyou{
+  display: block;
+}
+
+.thankyou .card{
+  max-width: 400px;
+  margin: auto;
+}
+
+.join .card fieldset{
+  margin: auto;
+  width: 230px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/*--------------Benefits----------------------*/
+
+.card.benefits h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align the heading */
+}
+
+.card.benefits p {
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center; /* Center-align the paragraph */
+}
+
+.card.benefits ul {
+  list-style-type: disc;
+  margin-left: auto; /* Center-align the list */
+  margin-right: auto;
+  padding-left: 20px;
+  max-width: 400px; /* Limit the width of the list */
+}
+
+.card.benefits li {
+  color: #777;
+  margin-bottom: 15px;
+  text-align: left; /* Left-align the list items */
+}
+
+.card.benefits strong {
+  color: #000;
+}
+
+.card.benefits fieldset{
+  width: initial !important;
+  max-width: 500px;
+  border-radius: 10px;
+}
