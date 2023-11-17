@@ -1,0 +1,29 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "2023-11-16",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "John Smith",
+        "gender": "Male",
+        "birthdate": "1990-05-15"
+      },
+      {
+        "name": "Jane Smith",
+        "gender": "Female",
+        "birthdate": "1992-08-22"
+      },
+      {
+        "name": "Sam Smith",
+        "gender": "Male",
+        "birthdate": "2010-03-10"
+      },
+      {
+        "name": "Sara Smith",
+        "gender": "Female",
+        "birthdate": "2015-11-05"
+      }
+    ]
+  }
+  
