@@ -36,11 +36,13 @@
         "links": [
           {
             "url":"https://codepen.io/Pedro-Pastor-Alarc-n/pen/GRPGdqw",
-            "title":"CSS Pseudo-elements"
+            "title":"CSS Pseudo-elements",
+            "type":"external"
           },
           {
             "url":"https://codepen.io/Pedro-Pastor-Alarc-n/pen/WNLyJOb",
-            "title":"Responsive \"Hamburger\" Menu"
+            "title":"Responsive \"Hamburger\" Menu",
+            "type":"external"
           },
           {
             "url":"lesson03/chamber-site-plan.html",
