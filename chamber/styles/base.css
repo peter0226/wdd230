@@ -223,6 +223,14 @@ a {
     height: 24px; /* 34px*/
   }
 
+  .bannerShow{
+    top: 150px;
+  }
+
+  #menu.bannerShow{
+    top:calc(1rem + 80px);
+  }
+
   .switch input {
     opacity: 0;
     width: 0;
@@ -561,3 +569,170 @@ main article section img {
   height: 75px;
   max-width: 100%;
 }
+
+.weather-content {
+  /*padding: 2em;*/
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-primary, .weather-second {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.weather-primary {
+  justify-content: space-around;
+  width: 90%;
+  margin: 0;
+}
+
+.weather-second {
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 0;
+}
+
+.weather-second.wind {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.weather-hr {
+  width: 100%;
+  border: solid;
+  border-width: thin;
+  color: rgb(189, 189, 189);
+}
+
+.weather-humidity {
+  justify-content: left;
+}
+
+.weather-humidity {
+  margin: 0;
+  font-size: small;
+}
+
+.forecast-content {
+  width: 100%;
+}
+
+.imgTemp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.forecast {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  font-size: small;
+  font-weight: 500;
+}
+
+.imgForeContent {
+  width: 4em;
+}
+
+.tempForeContent {
+  font-weight: 700;
+}
+
+.description{
+  margin-top: 0.3em;
+  font-style: italic;
+}
+
+/* --------- BANNER --------- */
+
+  #bannerMeet, #bannerMeet.show {
+  background: linear-gradient(to left, #05193700, var(--color1) 40%);
+  width: 100%;
+  height: 5em;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  background-color: #1e1e1e;
+}
+
+#bannerMeet.noShow {
+  display: none;
+}
+
+.bannerMeetDiv{
+  padding: 1em 1.3em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+.bMeetTitle {
+  margin: 0;
+  font-weight: 500;
+  color: white;
+}
+
+.bannerMeetDiv h6 {
+  font-weight: 400;
+  margin: 0;
+  margin-top: .5em;
+  color: white;
+}
+
+.b2Info {
+  font-size: x-small;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-left: 3em;
+}
+
+.b2Info p {
+  padding: .7em 1.2em;
+  border-radius: 2em;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  border: 1px solid white;
+}
+
+.b2Info a {
+  display: none;
+}
+
+#exitLarge {
+  border: none;
+  background-color: #004bad00;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+}
+
+#exitLarge:hover {
+  cursor: pointer;
+}
+
+#exitIconLarge {
+  color: #ffffffd0;
+  width: 1.2em;
+  height: 1.2em;
+}
+ 

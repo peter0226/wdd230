@@ -20,6 +20,29 @@
 
 </head>
 <body>
+
+    <!-- BANNER MEET -->
+    <div id="bannerMeet">
+        
+        <div class="bannerMeetDiv">
+            <div class="b1Info">
+                <h5 class="bMeetTitle">Chamber Meet & Greet</h5>
+                <h6>Visitor or user, you're welcome to join</h6>
+            </div>
+
+            <div class="b2Info">
+                <p id="pBanner">Wed, 7:00 p. m.</p>
+                <a href="#">Info</a>
+            </div>
+        </div>
+
+        <button id="exitLarge" onclick="closeBanner()">
+            <svg id="exitIconLarge" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg>
+        </button>
+    </div>
+
     <header>
         <img width="70" height="70" src="images/logo.webp" alt="Logo">
         <div>
@@ -27,12 +50,12 @@
             <h6 class="title2">Chamber of Commerce</h6>
         </div>
     </header>
-    <label class="switch">
+    <label class="switch bannerShow">
         <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode">
         <span class="slider round"></span>
     </label>
     <nav class="navigation">
-        <button id="menu" aria-label="Menu"></button>
+        <button id="menu" aria-label="Menu" class="bannerShow"></button>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
@@ -67,14 +90,33 @@
             <a href="#">more info ..</a>
         </section>
         <section class="card">
-            <h2>Weather</h2>
-            <hr>
-            <h3>Information</h3>
-            <p>Weather: <span id="weather">...</span></p>
-            <p>Number of Visits: <span id="visits">0</span></p>
-            <p><b>Temperature:</b> <span id="temperature">N/A</span> °F</p>
-            <p><b>Wind Speed:</b> <span id="windspeed">N/A</span> mph</p>
-            <p><b>Wind Chill:</b> <span id="windchill">N/A</span> °F</p>
+            <div class="weather-content">
+                <h3>Weather</h3>
+        
+                <div class="weather-primary">
+                    <img id="weather-icon" src="" alt="Few Clouds Icon" loading="lazy">
+                    <div id="wea-main-titles">
+                        <span id="current-temp">77 °F</span>
+                        <p id="description" class="description">Few Clouds</p>
+                    </div>
+                </div>
+
+                <div class="weather-second">
+                    <p class="weather-humidity">Humidity</p>
+                    <span id="humidity">90 %</span>
+                </div>
+        
+                <div class="weather-second wind">
+                    <p class="weather-humidity">Wind Chill</p>
+                    <span id="wind-chill"></span>
+                </div>
+    
+                <hr class="weather-hr">
+
+                <div class="forecast-content" id="forecast-container">
+                    
+                </div>
+            </div>
         </section>
     </main>
 
@@ -134,5 +176,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

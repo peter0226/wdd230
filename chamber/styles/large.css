@@ -43,6 +43,10 @@
         right: 10px;
     }
 
+    .bannerShow{
+        top: 114px;
+    }
+
     .hover:hover {box-shadow: 0 0 50px #333;}
 
     .join .card fieldset {
@@ -58,6 +62,17 @@
 
     .grid section {
       min-height: 250px;
+    }
+
+    .b2Info a {
+        background-color: #FB8500;
+        color: white;
+        padding: .7em 1.2em;
+        border-radius: 2em;
+        margin: 0;
+        margin-left: .5em;
+        text-decoration-line: none;
+        font-weight: 500;
     }
 
 }
