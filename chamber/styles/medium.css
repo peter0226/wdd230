@@ -5,5 +5,22 @@
     .join .card fieldset {
         width: 300px;
     }
+
+    .grid section {
+        min-height: 250px;
+      }
+
+    .list section h3 {
+      min-width: 100px;
+    }
+
+    .list section a {
+      display: block;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 180px;
+      text-align: justify;
+      text-align-last: left;
+    }
   }
   

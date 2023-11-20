@@ -1,0 +1,93 @@
+{
+    "members": [
+        {
+            "member": "01",
+            "name": "Xcaret",
+            "address": "Carretera Chetumal - Puerto Juárez km 282 Int. B, Playa del Carmen, Q.R.",
+            "phoneNumber": "+52 998-883-3143",
+            "website": "https://www.xcaret.com/",
+            "image": "images/members/xcaret.jpg",
+            "membership_level":"Gold",
+            "email": "servicioalcliente@xcaret.com"
+        },
+        {
+            "member": "02",
+            "name": "Cancun Airport Transportation",
+            "address": "Av. Chac Mool 301, 77518 Cancún, Q.R.",
+            "phoneNumber": "+52 998-980-0248",
+            "website": "https://www.cancunairporttransportation.com/",
+            "image": "images/members/Cancun-Airport-Transportation.jpg",
+            "membership_level":"Silver",
+            "email": "servicioalcliente@xcaret.com"
+        },
+        {
+            "member": "03",
+            "name": "Academia de Box Pygmakhia",
+            "address": "Av. Rodrigo Gómez Smz 43 Mz 3 Lote 1 y 2-PB, 43, 77506 Cancún, Q.R.",
+            "phoneNumber": "+52 998-321-9942",
+            "website": "https://www.academiadebox.com/",
+            "image": "images/members/academia-de-box-pygmakhia.jpg",
+            "membership_level":"Silver",
+            "email": "servicioalcliente@xcaret.com"
+        },
+        {
+            "member": "04",
+            "name": "TKD MAKHAI",
+            "address": "Av. Rodrigo Gómez Smz 43 Mz 3 Lote 1 y 2-PB, 43, 77506 Cancún, Q.R.",
+            "phoneNumber": "+52 998-196-4811",
+            "website": "https://taekwondo.fit/",
+            "image": "images/members/academia-de-taekwondo.jpg",
+            "membership_level":"Silver",
+            "email": "info@taekwondo.fit"
+        },
+        {
+            "member": "05",
+            "name": "WAHOO Private Yacht Rental",
+            "address": "Blvd. Kukulcan 9 Zona Hotelera, Benito Juarez, Q.R. 77500",
+            "phoneNumber": "+52 998-114-3044",
+            "website": "https://www.facebook.com/CancunYachtRental",
+            "image": "images/members/wahoo-private-yacht-rental.jpg",
+            "membership_level":"Bronze",
+            "email": "info@taekwondo.fit"
+        },
+        {
+            "member": "06",
+            "name": "Medexlab",
+            "address": "Nichupte Mza 5 lote 8-13 local 27-28, SM 16, 77505 Cancún, Q.R.",
+            "phoneNumber": "+52 998-234-4727",
+            "website": "https://medexlab.mx/",
+            "image": "images/members/Medexlab-Cancun.jpg",
+            "membership_level":"Bronze",
+            "email": "contacto@medexlab.mx"
+        },
+        {
+            "member": "07",
+            "name": "City Car Rental",
+            "address": "Parque Logistico APQ, Unidad 24, 77569 Cancún, Q.R.",
+            "phoneNumber": "+52 998-980-0766",
+            "website": "https://www.carrentalcancun.net/",
+            "image": "images/members/City-Car-Rental.jpg",
+            "membership_level":"Bronze",
+            "email": "bookings@citycarrental.com"
+        },
+        {
+            "member": "08",
+            "name": "Mercancun",
+            "address": "Av Tecnologico entre Av. Pehaltum y Calle Mosquito, 77533 Cancún, Q.R.",
+            "phoneNumber": "+52 998-233-6869",
+            "website": "https://www.mercancun.com/",
+            "image": "images/members/Mercancun.jpg",
+            "membership_level":"Bronze",
+            "email": "info@mercancun.com"
+        }
+
+        
+
+        
+
+        
+        
+    ]
+
+    
+}

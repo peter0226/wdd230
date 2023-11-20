@@ -48,4 +48,16 @@
     .join .card fieldset {
         width: 300px;
     }
+
+    /*  directory */
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+    }
+
+    .grid section {
+      min-height: 250px;
+    }
+
 }
