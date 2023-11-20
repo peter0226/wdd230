@@ -132,8 +132,8 @@
         "lesson": "10",
         "links": [
           {
-            "url":"#",
-            "title":"A10"
+            "url":"lesson10/weather.html",
+            "title":"Consuming a Weather API"
           }
         ]
       }
