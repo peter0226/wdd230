@@ -45,81 +45,90 @@
     <main class="join">
         
         <section class="card benefits">
-            <h2>Membership Benefits</h2>
-            <p>Select your membership level to enjoy the following benefits:</p>
-            <fieldset> 
-                <strong>NP Membership:</strong>
-                <ul>
-                    <li>Access to exclusive events and webinars for non-profit organizations.</li>
-                    <li>Receive periodic updates on the latest business regulations for non-profits.</li>
-                    <li>Opportunity to collaborate with other non-profit organizations on community initiatives.</li>
-                </ul>
-            </fieldset> 
-            <fieldset> 
-                <strong>Bronze Membership:</strong>
-                <ul>
-                    <li>Access to exclusive networking events for Bronze-level members.</li>
-                    <li>Discounts on participation in chamber fairs and expos.</li>
-                    <li>Receive quarterly market reports and economic analysis.</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <strong>Silver Membership:</strong>
-                <ul>
-                    <li>All the benefits of Bronze level.</li>
-                    <li>Participation in chamber committees to contribute to decision-making and business policies.</li>
-                    <li>Access to personalized business training and development sessions.</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <strong>Gold Membership:</strong>
-                <ul>
-                    <li>All the benefits of Silver level.</li>
-                    <li>Spotlight on the chamber's homepage with a link to your company.</li>
-                    <li>Exclusive invitations to dinners and VIP events with local and international business leaders.</li>
-                    <li>Opportunity to showcase your company at a chamber event.</li>
-                </ul>
-            </fieldset>
+            <div class="card-header center">
+                <h3 class="card-title">Membership Benefits</h3>
+            </div>
+            <div class="card-body">
+                <p>Select your membership level to enjoy the following benefits:</p>
+                <fieldset> 
+                    <strong>NP Membership:</strong>
+                    <ul>
+                        <li>Access to exclusive events and webinars for non-profit organizations.</li>
+                        <li>Receive periodic updates on the latest business regulations for non-profits.</li>
+                        <li>Opportunity to collaborate with other non-profit organizations on community initiatives.</li>
+                    </ul>
+                </fieldset> 
+                <fieldset> 
+                    <strong>Bronze Membership:</strong>
+                    <ul>
+                        <li>Access to exclusive networking events for Bronze-level members.</li>
+                        <li>Discounts on participation in chamber fairs and expos.</li>
+                        <li>Receive quarterly market reports and economic analysis.</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <strong>Silver Membership:</strong>
+                    <ul>
+                        <li>All the benefits of Bronze level.</li>
+                        <li>Participation in chamber committees to contribute to decision-making and business policies.</li>
+                        <li>Access to personalized business training and development sessions.</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <strong>Gold Membership:</strong>
+                    <ul>
+                        <li>All the benefits of Silver level.</li>
+                        <li>Spotlight on the chamber's homepage with a link to your company.</li>
+                        <li>Exclusive invitations to dinners and VIP events with local and international business leaders.</li>
+                        <li>Opportunity to showcase your company at a chamber event.</li>
+                    </ul>
+                </fieldset>
+            </div>
         </section>
 
         <section class="card">
             <form method="get" action="thankyou.html">
-                <h2>Join</h2>
-                <fieldset> 
-                    <legend>Applicant information</legend> 
-                    <label class="top">Name* <input type="text" id="name" name="name" required></label> 
-                    <label class="top">Last name* <input type="text" id="lastName" name="lastname" required></label> 
-                    <label class="top">Title or position* <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required></label> 
-                    <label class="top">Email*
-                        <input type="email" id="email" name="email" placeholder="correo@dominio.com" required>
-                    </label>
-                    <label class="top">Mobile phone number*
-                        <input type="tel" id="telephone" name="telephone" required>
-                    </label>
-                </fieldset> 
-                <fieldset> 
-                    <legend>Business/organization's</legend> 
+                <div class="card-header center">
+                    <h2 class="card-title">Join</h2>
+                </div>
+                <div class="card-body">
+                    <fieldset> 
+                        <legend>Applicant information</legend> 
+                        <label class="top">Name* <input type="text" id="name" name="name" required></label> 
+                        <label class="top">Last name* <input type="text" id="lastName" name="lastname" required></label> 
+                        <label class="top">Title or position* <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required></label> 
+                        <label class="top">Email*
+                            <input type="email" id="email" name="email" placeholder="correo@dominio.com" required>
+                        </label>
+                        <label class="top">Mobile phone number*
+                            <input type="tel" id="telephone" name="telephone" required>
+                        </label>
+                    </fieldset> 
+                    <fieldset> 
+                        <legend>Business/organization's</legend> 
 
-                    <label class="top">Business name*
-                        <input type="text" id="businessname" name="businessname" required>
-                    </label>
-                    <label class="top">Business description
-                        <textarea id="description" name="description" rows="4" cols="50"></textarea>
-                    </label>
-                </fieldset> 
-                <fieldset> 
-                    <legend>Membership level</legend> 
-                    <label class="sbs"><input type="radio" name="mlevel" value="np" checked> NP Membership is for non profit organizations and there is no fee</label> 
-                    <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label> 
-                    <label class="sbs"><input type="radio" name="mlevel" value="silver"> Silver Membership</label> 
-                    <label class="sbs"><input type="radio" name="mlevel" value="gold"> Gold Membership</label> 
-                </fieldset> 
-                <input type="hidden" id="timestamp" name="timestamp" value="">
-                <input class="submitBtn" type="submit" value="Sign Up">
-            </form>
+                        <label class="top">Business name*
+                            <input type="text" id="businessname" name="businessname" required>
+                        </label>
+                        <label class="top">Business description
+                            <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                        </label>
+                    </fieldset> 
+                    <fieldset> 
+                        <legend>Membership level</legend> 
+                        <label class="sbs"><input type="radio" name="mlevel" value="np" checked> NP Membership is for non profit organizations and there is no fee</label> 
+                        <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership</label> 
+                        <label class="sbs"><input type="radio" name="mlevel" value="silver"> Silver Membership</label> 
+                        <label class="sbs"><input type="radio" name="mlevel" value="gold"> Gold Membership</label> 
+                    </fieldset> 
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input class="submitBtn" type="submit" value="Sign Up">
+                </form>
+            </div>
         </section>
         
     </main>
+    <div class="content"></div>
 
     <footer>
         <div>

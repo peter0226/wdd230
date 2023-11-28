@@ -75,4 +75,8 @@
         font-weight: 500;
     }
 
+    .hero picture img{
+        width: 100vw;
+    }
+
 }
