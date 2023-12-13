@@ -76,8 +76,8 @@ header h1 {
   
   .btn-custom {
     position: absolute;
-    top: calc(50% - 27px);
-    left: calc(50% - 98px);
+    top: calc(50% - 50px);
+    left: calc(50% - 60px);
     background: #743F5B;
     color: #fff;
     padding: 15px 25px;
