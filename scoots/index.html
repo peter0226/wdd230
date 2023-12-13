@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cozumel with Scoots - Your Premier Scooter Rental Service. Discover the freedom and flexibility of scooter rentals in Cozumel. Book now for an unforgettable adventure!">
+    <meta name="keywords" content="Scooter Rental, Cozumel, Explore Cozumel, Scoots, Adventure, Vacation, Rental Service">
+    <meta name="author" content="Pedro Pastor">
+    <title>Scoots - Scooter Rental</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Scoots - Scooter Rental" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peter0226.github.io/wdd230/scoots/" />
+    <meta property="og:image" content="https://peter0226.github.io/wdd230/scoots/images/scoots.jpg" />
+    <link rel="canonical" href="https://peter0226.github.io/wdd230/scoots/" />
+
+</head>
+<body>
+
+    <!-- BANNER MEET -->
+    <div id="bannerMeet">
+        
+        <div class="bannerMeetDiv">
+            <div class="b1Info">
+                <h5 class="bMeetTitle">Maximum temperature</h5>
+                <h6>Cozumel, Mex.</h6>
+            </div>
+
+            <div class="b2Info">
+                <img id="weather-icon2" width="50" height="50" src="http://openweathermap.org/img/wn/02n.png" alt="Weather Icon" loading="lazy">
+                <p id="pBanner"></p>
+                
+            </div>
+        </div>
+
+        <button id="exitLarge" onclick="closeBanner()">
+            <svg id="exitIconLarge" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg>
+        </button>
+    </div>
+
+    <header>
+        <img width="70" height="70" src="images/logo.webp" alt="Logo">
+        <div>
+            <h1>Scoots</h1>
+            <h5 class="title2">Scooter Rental</h5>
+        </div>
+    </header>
+    <label class="switch bannerShow">
+        <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode">
+        <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+        <button id="menu" aria-label="Menu" class="bannerShow"></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="imagen-con-efecto">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+        <div class="capa-oscura">
+        </div>
+        <div class="home-grid">
+            <section class="msg">
+                <h2>Scooter Rental Service in Downtown Cozumel</h2>
+                <p>Opening at 8:00 AM all Days </p>
+            </section>
+        </div>
+        
+        <p class="card-text"><a href="reservations.html" class="btn btn-custom">Reserve</a></p>
+        
+    </div>
+
+    <div class="island_images">
+        <section class="images-card">
+            <img class="card-img" width="410" height="237" src="images/picture1.webp" alt="San Gervasio Archaeological Zone" loading="lazy">
+            <img class="icon" width="64" height="64" src="images/icons/piramide-maya.webp" alt="piramide icon" loading="lazy">
+            <h3>San Gervasio Archaeological Zone</h3>
+        </section>
+        <section class="images-card">
+            <img class="card-img" width="410" height="237" src="images/picture2.webp" alt="Punta Sur Eco Beach Park" loading="lazy">
+            <img class="icon" width="64" height="64" src="images/icons/faro.webp" alt="faro icon" loading="lazy">
+            <h3>Punta Sur Eco Beach Park</h3>
+        </section>
+        <section class="images-card">
+            <img class="card-img" width="410" height="237" src="images/picture3.webp" alt="Cozumel Beach" loading="lazy">
+            <img class="icon" width="64" height="64" src="images/icons/playa.webp" alt="playa icon" loading="lazy">
+            <h3>Cozumel Beach</h3>
+        </section>
+
+    </div>
+
+    <main>
+        
+        <section class="card">
+            <div class="card-header">
+                <h3 class="card-title">Types of Rentals</h3>
+            </div>
+            <div class="card-body">
+                <table class="noMovil">
+                    <thead>
+                        <tr>
+                            <th scope="col">Honda Motor Scooters</th>
+                            <th scope="col">Side-by-Side ATVs</th>
+                            <th scope="col">Jeeps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Honda Metropolitan (49cc) - 1 person</td>
+                            <td rowspan="3">Honda Pioneer 1000 - 4 person</td>
+                            <td>Jeep Wrangler - 4 door manuel with A/C - 5 person</td>
+                        </tr>
+                        <tr>
+                            <td>Honda Dio (110cc) - 2 person</td>
+                            
+                            <td>Jeep Wrangler - 2 door - open air - manuel - 4 person</td>
+                        </tr>
+                        <tr>
+                            <td>Honda PCX150 (149cc) - 2 person</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="movil">
+                    <h3>Honda Motor Scooters</h3>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+
+                    <h3>Side-by-Side ATVs</h3>
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person</li>
+                    </ul>
+
+                    <h3>Jeeps</h3>
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                    </ul>
+                </div>
+                <img src="images/ima.webp" width="700" height="250" alt="Place to rent" loading="lazy">
+            </div>
+            
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <h3 class="card-title">Weather</h3>
+            </div>
+            <div class="card-body">
+                <div class="weather-content">
+                    <div class="weather-primary">
+                        <img id="weather-icon" width="100" height="100" src="http://openweathermap.org/img/wn/02n@2x.png" alt="Weather Icon" loading="lazy">
+                        <div id="wea-main-titles">
+                            <span id="current-temp">77 °F</span>
+                            <p id="description" class="description">Few Clouds</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-second">
+                        <p class="weather-humidity">Humidity</p>
+                        <span id="humidity">90 %</span>
+                    </div>
+            
+                    <div class="weather-second wind">
+                        <p class="weather-humidity">Wind Chill</p>
+                        <span id="wind-chill"></span>
+                    </div>
+        
+                    <hr class="weather-hr">
+                    <h3>Upcoming forecasts at 3 PM</h3>
+
+                    <div class="forecast-content" id="forecast-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="content">
+        <section class="card">
+            <div class="card-header">
+                <h3 class="card-title">Advantages of Renting Scooters</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Freedom to explore the island at your own pace.</li>
+                    <li>Access to off-the-beaten-path places and hidden beaches.</li>
+                    <li>Time savings and flexibility compared to other forms of transportation.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <h3 class="card-title">Additional services</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Free delivery to hotels or Airbnbs.</li>
+                    <li>Additional insurance and coverage options.</li>
+                    <li>Payment options (Google Pay, Apple Pay, credit cards, cash, etc.).</li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <h3 class="card-title">Attention schedule</h3>
+            </div>
+            <div class="card-body">
+                <p>We are here for you every day of the week. Check our schedules and plan your visit!</p>
+                <ul>
+                    <li><strong>Monday - Friday:</strong> 8 AM - 7 PM</li>
+                    <li><strong>Saturdays:</strong> 8 AM - 6 PM</li>
+                    <li><strong>Sundays:</strong> 8 AM - 5 PM</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>
+            <img width="70" height="70" src="images/logo.webp" alt="Logo">
+            <div>
+                <h1>Scoots</h1>
+                <h5 class="title2">Scooter Rental</h5>
+            </div>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <a id="correo4" href="mailto:contact@scoots.com">contact@scoots.com</a>
+            <br>
+            <a id="telefono4" href="tel:+123456789">+123456789</a>
+        </div>
+        <div class="row social-networks">
+            <h3>Social networks</h3>
+            <a href="#"><img width="40" height="40" src="images/networks/facebook.webp" class="redes" alt="facebook"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/linkedin.webp" class="redes" alt="linkedin"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/instagram.webp" class="redes" alt="instagram"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/youtube.webp" class="redes" alt="youtube"></a>
+            
+
+        </div>
+        <div class="footer-end">
+            <hr>
+            <p>&copy; <span id="currentYear">2023</span> Pedro Pastor Alarcon, Mexico <img class="flag" src="https://flagcdn.com/20x15/mx.png" alt="Flag Mexico"></p>
+            <p id="lastModified"></p>
+        </div> 
+    </footer>
+    <script>
+        var pagina='index';
+    </script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+</html>

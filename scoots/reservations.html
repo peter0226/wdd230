@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure your adventure with Scoots - Reservations. Easily book your scooter online and explore Cozumel hassle-free. Reserve now for a seamless rental experience and unlock the freedom to discover the island at your own pace.">
+    <meta name="author" content="Pedro Pastor">
+    <title>Scoots - Reservations</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Scoots - Reservations" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peter0226.github.io/wdd230/scoots/reservations.html" />
+    <meta property="og:image" content="https://peter0226.github.io/wdd230/scoots/images/scoots.jpg" />
+    <link rel="canonical" href="https://peter0226.github.io/wdd230/scoots/reservations.html" />
+
+</head>
+<body>
+    <header>
+        <img width="70" height="70" src="images/logo.webp" alt="Logo">
+        <div>
+            <h1>Scoots</h1>
+            <h5 class="title2">Scooter Rental</h5>
+        </div>
+    </header>
+    <label class="switch">
+        <input type="checkbox" name="changeMode" id="changeMode" aria-label="Switch to dark mode">
+        <span class="slider round"></span>
+    </label>
+    <nav class="navigation">
+        <button id="menu" aria-label="Menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="article">
+
+        <section class="form_wrap">
+
+            <section class="cantact_info">
+                <section class="info_title">
+                    <h2>Reservations</h2>
+                </section>
+                <section class="info_items">
+                    <img id="productSelect" src="images/rentals/Honda_Metro_Scooter.webp" alt="Type Select Photo">
+                </section>
+            </section>
+    
+            <form action="booking_confirmation.html" class="form_contact">
+                <h2>Rental Details</h2>
+                <div class="user_info">
+                    <label for="rentalDate">Rental Date *</label>
+                    <input type="date" name="rentalDate" id="rentalDate" required>
+
+                    <label class="lb">Rental Period (Days) *<input onchange="verificarCambio(this.value)" type="range" id="period" name="rentalPeriod" min="0" max="6" value="0.5" step="0.5" list="rangevalues" required>
+                        <datalist id="rangevalues">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </datalist>
+                    </label>
+
+                    <label for="rentalType">Rental Type *</label>
+                    <select id="rentalType" name="rentalType" onchange="changeImage(this.value)" required>
+                    </select>
+
+                    <label for="rentalNumber">Number *</label>
+                    <input type="number" name="number" id="rentalNumber" required>
+
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" required>
+
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" name="name" id="fullName" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="homeLocation">Home State or Country *</label>
+                    <input type="text" name="homeLocation" id="homeLocation" required>
+
+                    <label for="cruiseLine">Cruise Line (if applicable)</label>
+                    <input type="text" name="cruiseLine" id="cruiseLine">
+
+                    <label for="accommodations">Special Accommodations/Comments</label>
+                    <textarea name="accommodations" id="accommodations"></textarea>
+
+                    <div class="agreement_checkbox">
+                        <input type="checkbox" id="agreementCheckbox" required>
+                        <label for="agreementCheckbox">I agree to the rental terms and <a href="#agreementCheckbox" onclick="abrirCondiciones()">conditions.</a></label>
+                    </div>
+
+                    <input type="submit" value="Book Now">
+                </div>
+            </form>
+    
+        </section>
+
+    </main>
+    <div class="content">
+        
+    </div>
+
+    <div class="legal" id="terms">
+
+        <!-- Terms, Conditions, Notices -->
+        <div class="terms">
+          <div class="terms-scroll">
+            <div>
+                <h3>Rental Agreement Information</h3>
+                <p>A $50 security deposit is required to confirm reservations.</p>
+                <p>A valid driver's license is required at the time of rental.</p>
+                <p>No one under the age of 12 years is allowed to ride on the scooters.</p>
+                <p>Fuel charge is not included.</p>
+                <p>Unlimited mileage.</p>
+                <p>Liability insurance is included.</p>
+                <p>Damage insurance is available for purchase.</p>
+                <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</p>
+                <p>Rentals may be returned to either physical location.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="actions">
+          <div>
+            <button type="button" onclick="cerrarCondiciones()">Cancel</button>
+            <button type="button" onclick="aceptarCondiciones()">Accept</button>
+          </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <img width="70" height="70" src="images/logo.webp" alt="Logo">
+            <div>
+                <h1>Scoots</h1>
+                <h5 class="title2">Scooter Rental</h5>
+            </div>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <a id="correo4" href="mailto:contact@scoots.com">contact@scoots.com</a>
+            <br>
+            <a id="telefono4" href="tel:+123456789">+123456789</a>
+        </div>
+        <div class="row social-networks">
+            <h3>Social networks</h3>
+            <a href="#"><img width="40" height="40" src="images/networks/facebook.webp" class="redes" alt="facebook"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/linkedin.webp" class="redes" alt="linkedin"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/instagram.webp" class="redes" alt="instagram"></a>
+            <a href="#"><img width="40" height="40" src="images/networks/youtube.webp" class="redes" alt="youtube"></a>
+            
+
+        </div>
+        <div class="footer-end">
+            <hr>
+            <p>&copy; <span id="currentYear">2023</span> Pedro Pastor Alarcon, Mexico <img class="flag" src="https://flagcdn.com/20x15/mx.png" alt="Flag Mexico"></p>
+            <p id="lastModified"></p>
+        </div> 
+    </footer>
+    <script>
+        var omitir=1;
+        var pagina='reservations';
+    </script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/rentalsList.js"></script>
+    <script src="scripts/terms.js"></script>
+</body>
+</html>

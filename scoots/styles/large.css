@@ -1,0 +1,108 @@
+@media (min-width: 640px) {
+    nav li {
+        display: inline-block; 
+        margin: 0 10px; 
+    }
+    main{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .join{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .column2{
+        grid-template-columns: 1fr 3fr;
+    }
+      
+
+    .content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #menu {
+		display: none;
+	}
+
+    header {
+        justify-content: center;
+    }
+
+    .btn-custom {
+        font-size: 30px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social-networks{
+        align-self: center;
+    }
+
+    .switch {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .bannerShow{
+        top: 114px;
+    }
+
+    .hover:hover {box-shadow: 0 0 50px #333;}
+
+    .join .card fieldset {
+        width: 300px;
+    }
+
+    /*  directory */
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+    }
+
+    .grid section {
+      min-height: 250px;
+    }
+
+    .b2Info a {
+        background-color: #FB8500;
+        color: white;
+        padding: .7em 1.2em;
+        border-radius: 2em;
+        margin: 0;
+        margin-left: .5em;
+        text-decoration-line: none;
+        font-weight: 500;
+    }
+
+    .hero picture img{
+        width: 100vw;
+    }
+
+    /**/
+    .cantact_info{
+        display: flex;
+    }
+
+    form.form_contact{
+        width: 62%;
+    }
+
+    /**/
+    .maps {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+
+    .noMovil{
+        display: block;
+    }
+
+    .movil{
+        display: none;
+    }
+
+}
