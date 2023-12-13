@@ -32,7 +32,7 @@ const xhr = new XMLHttpRequest();
                     const rentalDiv = document.createElement("section");
 
                     rentalDiv.innerHTML = `
-                        <img src="${rental.image}" alt="${rental.type} photo" />
+                        <img src="${rental.image}" width="200" height="130" alt="${rental.type} photo" loading="lazy"/>
                         <h3>${rental.type}</h3>
                         <p><span>Max Persons: ${rental.maxPersons}</span></p>
                         <div>
